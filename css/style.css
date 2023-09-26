@@ -7,29 +7,35 @@
 html,body{
     height: 100%;
     overflow-y: hidden;
-    background-image: linear-gradient(to left, rgb(199, 204, 219) , rgb(118, 123, 145), rgb(225, 229, 238));
+    background-color:#c5b9a9;
 }
 .container{
     height: 100%;
     width: 90%;
     display: flex;
     flex-flow: column;
-    background-image: linear-gradient(to bottom, rgb(199, 204, 219) , rgb(118, 123, 145), rgb(225, 229, 238));
+    background-color: #ececec;
     overflow-y: auto;
+    box-shadow: 5px 5px 100px 50px rgba(98, 98, 98, 0.5);
+    padding: 10px;
 }
 #nav-color{
-    background-color: #2A324B !important;
+    background-color: #fe7b47 !important;
     color:white !important;
 }
 .navbar .navbar-nav .nav-link{
     color:white;
-    transition:color 0.3s ease-in-out;
+    transition:color 0.6s ease-in-out;
 }
 .navbar .navbar-nav .nav-link:hover {
-    color: #F57514;
+    color: black;
 }
 .navbar .navbar-brand {
-    color: #F57514;
+    color: white;
+    transition:  color 0.6s ease-out;
+}
+.navbar .navbar-brand:hover {
+    color: black;
 }
 header{
     top:0;
@@ -51,7 +57,6 @@ main{
 .social-icons img {
     height: 30px;
     width: 30px;
-    background-color: white;
 }
 .social-icons a:hover{
     box-shadow: 0px 0px 150px #000000;
@@ -86,6 +91,11 @@ main{
     height: auto;
     float: left;
     margin-right: 20px;
+    box-shadow:6px 6px 6px 6px rgba(0, 0, 0, .5);
+    transition:transform 0.6s ease;
+}
+.resume-image:hover {
+    transform: scale(1.1);
 }
 
 .resume-details {
@@ -100,7 +110,7 @@ main{
 .bookmark-link {
     margin: 0 10px;
     text-decoration: none;
-    color:white;
+    color:#f64600;
     font-weight: bold;
 }
 
@@ -123,7 +133,7 @@ hr{
 .email-link {
     display: inline-block;
     align-items: center;
-    background-color: #2A324B;
+    background-color: #fe7b47;
     color: white;
     padding: 10px 20px;
     border-radius: 2px;
@@ -132,5 +142,5 @@ hr{
 }
 
 .email-link:hover {
-    background-color: #3c496f;
+    background-color: #f25314;
 }
