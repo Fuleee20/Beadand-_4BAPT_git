@@ -61,7 +61,7 @@ main{
 .social-icons a:hover{
     box-shadow: 0px 0px 150px #000000;
     z-index: 2;
-    transform: scale(1.5);
+    transform: scale(1.6);
     transition: transform 0.6s ease;
   }
   .copyright{
@@ -98,7 +98,7 @@ main{
     transition:transform 0.6s ease;
 }
 .resume-image:hover {
-    transform: scale(1.4);
+    transform: scale(1.2);
 }
 
 .resume-details {
@@ -166,4 +166,7 @@ hr{
 }
 #basic-info, #skills, #education, #languages {
     text-align: center;
+}
+#basic-info{
+    padding-top: 20px;
 }
