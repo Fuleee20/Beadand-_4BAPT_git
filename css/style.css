@@ -80,10 +80,13 @@ main{
 
 .resume-container {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
     margin-top: 10px;
     padding-left:10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .resume-image {
@@ -95,7 +98,7 @@ main{
     transition:transform 0.6s ease;
 }
 .resume-image:hover {
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 
 .resume-details {
@@ -103,6 +106,7 @@ main{
 }
 .bookmarks {
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     margin-top: 20px;
 }
@@ -143,4 +147,23 @@ hr{
 
 .email-link:hover {
     background-color: #f25314;
+}
+.resume_download_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.resume_download{
+    display: inline-block;
+    align-items: center;
+    background-color: #fe7b47;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: background-color 0.6s ease; 
+}
+#basic-info, #skills, #education, #languages {
+    text-align: center;
 }
