@@ -1,3 +1,4 @@
+/*Egész oldra való beállítások jel:H*/
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,400;1,100;1,200;1,600&family=Mukta:wght@300;400;500;700;800&display=swap');
 *{
     margin: 0;
@@ -9,6 +10,7 @@ html,body{
     overflow-y: hidden;
     background-color:#c5b9a9;
 }
+/*H*/
 .container{
     height: 100%;
     width: 90%;
@@ -19,6 +21,7 @@ html,body{
     box-shadow: 5px 5px 100px 50px rgba(98, 98, 98, 0.5);
     padding: 10px;
 }
+/*HEADER beállítása jel:N*/
 #nav-color{
     background-color: #fe7b47 !important;
     color:white !important;
@@ -64,6 +67,8 @@ main{
     transform: scale(1.6);
     transition: transform 0.6s ease;
   }
+  /*N*/
+  /*Footer bállításai*/
   .copyright{
     display: flex;
     flex-wrap: wrap;
@@ -73,6 +78,8 @@ main{
   .copyright:hover{
     color: #F57514;
   }
+  /*F*/
+  /*Main beállításai*/
   .resume_cv{
     text-align: center;
     padding: 20px;
@@ -164,9 +171,13 @@ hr{
     text-decoration: none;
     transition: background-color 0.6s ease; 
 }
-#basic-info, #skills, #education, #languages {
+.resume_download:hover{
+    background-color: #f25314;
+}
+#personal-info, #skills, #education, #languages {
     text-align: center;
 }
-#basic-info{
+#personal-info{
     padding-top: 20px;
 }
+/*M*/
