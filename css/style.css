@@ -185,7 +185,7 @@ hr{
 /*M*/
 .timetable{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: center;
     padding-bottom: 20px;
     color: white;
@@ -199,6 +199,7 @@ hr{
     flex-grow: 1;
     width: 100%;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/img/schedule_wp.jpeg);
+    overflow-x: auto;    
 }
 .schedule th,
 .schedule td {
@@ -237,4 +238,22 @@ summary:hover{
 }
 #total-credits:hover{
     color:#f25314;
+}
+@media screen and (max-width: 768px) {
+    .timetable {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .schedule th,
+    .schedule td {
+        padding: 15px;
+        max-width: none;
+    }
+
+    .time-column {
+        flex: 1;
+        background-color: rgb(126, 120, 120);
+        text-align: center;
+    }
 }
