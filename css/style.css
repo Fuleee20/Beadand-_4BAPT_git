@@ -209,12 +209,6 @@ hr{
 }
 .schedule th {
     background-color: #fe7b47;
-    transition: background 1s ease-in, color 0.6s ease;
-}
-
-.schedule th:hover {
-    background: linear-gradient(90deg, rgba(255,233,75,1) 0%, rgba(231,111,22,1) 99%);
-    color: white;
 }
 .summary_gy{
     background-color:#fe7b47;
@@ -224,10 +218,23 @@ hr{
 }
 summary{
     background-color: rgb(126, 120, 120);
-    transition: all 1s ease-in;
+    transition: all 1s linear;
     border-radius: 10px;
 }
 summary:hover{
     transform: scale(1.1);
     background-color: rgba(118, 118, 118, .5);
+}
+.credit-summary {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+}
+#total-credits{
+    color: #000000;
+    transition: color 0.6s linear;
+}
+#total-credits:hover{
+    color:#f25314;
 }
