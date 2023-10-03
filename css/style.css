@@ -25,7 +25,7 @@ html,body{
 }
 /*HEADER beállítása jel:N*/
 #nav-color{
-    background-color: #fe7b47 !important;
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
     color:white !important;
 }
 .navbar .navbar-nav .nav-link{
@@ -193,7 +193,7 @@ hr{
 .time-column{
     flex:0 0 10%;
     font-weight: bold;
-    background-color: rgb(126, 120, 120);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
 }
 .schedule {
     flex-grow: 1;
@@ -209,10 +209,10 @@ hr{
     text-align: center;
 }
 .schedule th {
-    background-color: #fe7b47;
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
 }
 .summary_gy{
-    background-color:#fe7b47;
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
     transition: all 1s ease-in;
     border-radius: 10px;
 
