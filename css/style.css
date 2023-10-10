@@ -257,3 +257,46 @@ summary:hover{
         text-align: center;
     }
 }
+/*Calendar*/
+.calendar {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.calendar-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-body li {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+    color: white;
+}
+.not_dec{
+   background-color: red !important;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
