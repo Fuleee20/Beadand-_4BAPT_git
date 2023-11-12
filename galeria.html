@@ -1,61 +1,171 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="img/favicon/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/app.js"></script>
     <title>Önéletrajz</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <div class="container">
-        <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav-color">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html">Bukovinszki Bálint</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Önéletrajz</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="orarend.html">Órarend</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="galeria.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Képgaléria
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">1</a></li>
-                          <li><a class="dropdown-item" href="#">2</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">3</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="naptar.html">Naptár</a>
-                      </li>
-                    </ul>
-                    <div class="social-icons">
-                      <a href="https://www.instagram.com/balint_bukovinszki/" target="_blank"><img src="/img/favicon/instagram.png" alt="Instagram"></a>
-                      <a href="https://www.facebook.com/balint.bukovinszki" target="_blank"><img src="/img/favicon/facebook.png" alt="Facebook"></a>
-                      <a href="https://www.linkedin.com/in/bálint-bukovinszki-180b62279/" target="_blank"><img src="/img/favicon/linkedin.png" alt="LinkedIn"></a>
-                  </div>
-                  </div>
-                </div>
-              </nav>
-        </header>
-        <main>
-          
+      <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav-color">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Bukovinszki Bálint</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Önéletrajz</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="orarend.html">Órarend</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="galeria.html"> Képgaléria </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="naptar.html">Naptár</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="videogaleria.html">Videó Galéria</a>
+                </li>
+              </ul>
+              <div class="social-icons">
+                <a
+                  href="https://www.instagram.com/balint_bukovinszki/"
+                  target="_blank"
+                  ><img src="/img/favicon/instagram.png" alt="Instagram"
+                /></a>
+                <a
+                  href="https://www.facebook.com/balint.bukovinszki"
+                  target="_blank"
+                  ><img src="/img/favicon/facebook.png" alt="Facebook"
+                /></a>
+                <a
+                  href="https://www.linkedin.com/in/bálint-bukovinszki-180b62279/"
+                  target="_blank"
+                  ><img src="/img/favicon/linkedin.png" alt="LinkedIn"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="gallery-wrap">
+          <h2>Képgaléria</h2>
+
+          <input type="radio" id="all" name="category" checked />
+          <label for="all">Összes</label>
+          <input type="radio" id="cars" name="category" />
+          <label for="cars">Autók</label>
+          <input type="radio" id="houses" name="category" />
+          <label for="houses">Házak</label>
+          <input type="radio" id="watches" name="category" />
+          <label for="watches">Órák</label>
+          <input type="radio" id="nature" name="category" />
+          <label for="nature">Természet</label>
+
+          <div class="gallery-images cars">
+            <img src="img/categories/cars/amggtr.jpeg" alt="cars" />
+          </div>
+          <div class="gallery-images cars">
+            <img src="img/categories/cars/benzamg.jpeg" alt="cars" />
+          </div>
+          <div class="gallery-images cars">
+            <img src="img/categories/cars/gwagon.jpeg" alt="cars" />
+          </div>
+          <div class="gallery-images cars">
+            <img src="img/categories/cars/rs5.jpeg" alt="cars" />
+          </div>
+          <div class="gallery-images watches">
+            <img src="img/categories/watches/watch_1.jpeg" alt="watches" />
+          </div>
+          <div class="gallery-images watches">
+            <img src="img/categories/watches/watch_2.jpeg" alt="watches" />
+          </div>
+          <div class="gallery-images watches">
+            <img src="img/categories/watches/watch_3.jpeg" alt="watches" />
+          </div>
+          <div class="gallery-images watches">
+            <img src="img/categories/watches/watch_4.jpeg" alt="watches" />
+          </div>
+          <div class="gallery-images houses">
+            <img src="img/categories/houses/villa_1.jpeg" alt="houses" />
+          </div>
+          <div class="gallery-images houses">
+            <img src="img/categories/houses/villa_2.jpeg" alt="houses" />
+          </div>
+          <div class="gallery-images houses">
+            <img src="img/categories/houses/villa_3.jpeg" alt="houses" />
+          </div>
+          <div class="gallery-images houses">
+            <img src="img/categories/houses/villa_4.jpeg" alt="houses" />
+          </div>
+          <div class="gallery-images nature">
+            <img src="img/categories/nature/nature_1.jpeg" alt="nature" />
+          </div>
+          <div class="gallery-images nature">
+            <img src="img/categories/nature/nature_2.jpeg" alt="nature" />
+          </div>
+          <div class="gallery-images nature">
+            <img src="img/categories/nature/nature_3.jpeg" alt="nature" />
+          </div>
+          <div class="gallery-images nature">
+            <img src="img/categories/nature/nature_4.jpeg" alt="nature" />
+          </div>
+          <div class="gallery-images cars">
+            <img src="img/categories/cars/cars_1.jpeg" alt="cars" />
+          </div>
+          <div class="gallery-images cars">
+            <img src="img/categories/cars/cars_2.jpeg" alt="cars" />
+          </div>
+          <div class="gallery-images houses">
+            <img src="img/categories/houses/villa_5.jpeg" alt="houses" />
+          </div>
+          <div class="gallery-images houses">
+            <img src="img/categories/houses/villa_6.jpeg" alt="houses" />
+          </div>
+        </section>
       </main>
-      
-        <footer><p class="copyright">&copy; 2023 Bukovinszki Bálint</p></footer>
+
+      <footer>
+        <p class="copyright">&copy; 2023 Bukovinszki Bálint</p>
+      </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
